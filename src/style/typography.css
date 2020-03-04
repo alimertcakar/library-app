@@ -1,0 +1,11 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+  font-weight: 450;
+}
+/* add with media queries   line-height: 1.3;
+*/
