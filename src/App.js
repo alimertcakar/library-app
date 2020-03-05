@@ -17,7 +17,7 @@ function App() {
           <Navbar title="Library Index" />
         </div>
       </div>
-      <div className="two columns offset-by-five">
+      <div className="four columns offset-by-four">
         <Search />
         <Pagination />
       </div>

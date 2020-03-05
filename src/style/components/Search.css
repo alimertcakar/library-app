@@ -1,4 +1,14 @@
+#searchContainer {
+  display: flex;
+}
 #Search {
-  margin: 10px 0 0;
-  width: 100%;
+  flex-grow: 80;
+  display: inline-block;
+  margin: 10px 5px 0;
+}
+#searchContainer input[type="submit"] {
+  flex-grow: 20;
+  color: red;
+  display: inline-block;
+  margin: 10px 0 0 !important;
 }
