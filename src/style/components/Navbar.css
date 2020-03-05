@@ -1,0 +1,12 @@
+#Navbar {
+  color: #222;
+  background-color: aliceblue;
+  text-align: center;
+  text-shadow: 3px 0px 3px gray;
+  user-select: none;
+  margin-bottom: 0;
+  padding: 5px 0 1px;
+}
+#Navbar:hover {
+  cursor: pointer;
+}
