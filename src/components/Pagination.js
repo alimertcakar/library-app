@@ -5,8 +5,9 @@ function Pagination(props) {
 
     return (
         <div className="Pagination">
-            Pages={Pages}
-            <a onClick={alert("x")}>Previous Page</a>
+            <a onClick={() => { alert("x") }}>Previous Page</a>
+            &nbsp; Pages:{Pages} &nbsp;
+            <a onClick={() => { alert("x") }}>Next Page</a>
         </ div>
     )
 }

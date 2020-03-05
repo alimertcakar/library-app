@@ -11,13 +11,16 @@ import Pagination from './components/Pagination.js';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar title="Library Index" />
+    <div className="container">
+      <div className="row">
+        <div className="twelve columns">
+          <Navbar title="Library Index" />
+        </div>
+      </div>
       <div className="two columns offset-by-five">
         <Search />
         <Pagination />
       </div>
-
     </div>
   );
 }

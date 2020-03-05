@@ -3,10 +3,14 @@
   background-color: aliceblue;
   text-align: center;
   text-shadow: 3px 0px 3px gray;
-  user-select: none;
   margin-bottom: 0;
   padding: 5px 0 1px;
+  border-radius: 2px;
 }
-#Navbar:hover {
+
+#Navbar--link h1 {
+  display: inline-block;
+  user-select: none;
   cursor: pointer;
+  text-decoration: underline; /* TODO add on hover text decoration color change and animation*/
 }

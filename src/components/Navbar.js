@@ -3,11 +3,13 @@ import '../style/components/Navbar.css';
 
 function Navbar(props) {
     return (
-        <a href="#">
-            <div id="Navbar">
+
+        <div id="Navbar">
+            <a href="#" id="Navbar--link">
                 <h1>{props.title}</h1>
-            </div>
-        </a>
+            </a>
+        </div >
+
     )
 }
 
