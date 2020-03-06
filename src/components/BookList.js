@@ -4,12 +4,11 @@ import BookContext from './contexts/BookContext';
 
 function BookList(props) {
     const Books = useContext(BookContext);
-    console.log(Books);
     return (
         <BookContext.Provider>
-            <BookDisplay booksJson={Books} />
-            <BookDisplay booksJson={Books} />
-
+            {
+                Array(Books.bookCount).fill(<BookDisplay booksJson={Books.info} />)
+            }
         </BookContext.Provider>
     )
 }

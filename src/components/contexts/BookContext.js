@@ -1,6 +1,6 @@
 import React, { createContext } from 'react';
 
-const BookContext = createContext("no book yet");
+const BookContext = createContext({ "bookCount": 3, "info": "this is info" });
 
 
 export default BookContext;
