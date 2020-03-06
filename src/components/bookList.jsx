@@ -6,13 +6,12 @@ function BookList(props) {
   const Books = useContext(BookContext);
   return (
     <BookContext.Provider>
-      {Array(Books.bookCount).fill(
-        <BookDisplay
-          details={Books.details !== "" && "No details"}
-          booksJson={Books.info}
-        />
-      )}
+      {Books.books.map(book => (
+        <BookDisplay bookName={book.bookName} />
+      ))}
     </BookContext.Provider>
   );
 }
 export default BookList;
+
+//      {// Array(Books.bookCount).fill(<BookDisplay booksJson={Books.books} />)}
