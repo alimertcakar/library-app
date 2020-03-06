@@ -4,10 +4,10 @@ import './style/reset.css';
 import './style/skeleton.css';
 import './style/typography.css';
 
-import Navbar from './components/Navbar';
-import Search from './components/Search';
-import Pagination from './components/Pagination';
-import BookList from './components/BookList';
+import Navbar from './components/navbar';
+import Search from './components/search';
+import Pagination from './components/pagination';
+import BookList from './components/bookList';
 
 function App() {
   return (
@@ -22,7 +22,6 @@ function App() {
       <div className="row">
         <div className="four columns offset-by-four">
           <Search />
-          <Pagination />
         </div>
       </div>
 
@@ -31,6 +30,13 @@ function App() {
           <BookList />
         </div>
       </div>
+
+      <div className="row">
+        <div className="four columns offset-by-four">
+          <Pagination />
+        </div>
+      </div>
+
     </div>
   );
 }
