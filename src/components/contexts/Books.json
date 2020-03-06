@@ -1,201 +1,241 @@
 {
   "books": [
     {
+      "id": 0,
       "bookName": "Ateşten Gömlek",
       "author": "Halide Edip Adıvar",
       "publisher": "Idea yayınevi"
     },
     {
+      "id": 1,
       "bookName": "Suç ve Ceza",
       "author": "Fyodor Dostoyevski",
       "publisher": "Can yayınevi"
     },
     {
+      "id": 2,
       "bookName": "Sefiller",
       "author": "Victor Hugo",
       "publisher": "Türkiye İş Bankası Kültür Yayınları"
     },
     {
+      "id": 3,
       "bookName": "Anna Karenina",
       "author": "Lev Tolstoy",
       "publisher": "Idea yayınevi"
     },
     {
+      "id": 4,
       "bookName": "Vadideki Zambak",
       "author": "Honoré de Balzac",
       "publisher": "Can yayınevi"
     },
     {
+      "id": 5,
       "bookName": "Notre Dame'ın Kamburu",
       "author": "Victor Hugo",
       "publisher": "Türkiye İş Bankası Kültür Yayınları"
     },
     {
+      "id": 6,
       "bookName": "Aşk ve Gurur",
       "author": "Jane Austen",
       "publisher": "Idea yayınevi"
     },
     {
+      "id": 7,
       "bookName": "İlahi Komedya",
       "author": "Dante Alighieri",
       "publisher": "Idea yayınevi"
     },
     {
+      "id": 8,
       "bookName": "Romeo ve Juliet",
       "author": "William Shakespeare",
       "publisher": "Can yayınevi"
     },
     {
+      "id": 9,
       "bookName": "Genç Werther’in Acıları",
       "author": "Johann Wolfgang Von Goethe",
       "publisher": "Türkiye İş Bankası Kültür Yayınları"
     },
     {
+      "id": 10,
       "bookName": "Gazap Üzümleri",
       "author": "John Steinbeck",
       "publisher": "Idea yayınevi"
     },
     {
+      "id": 11,
       "bookName": "Babalar ve Oğullar",
       "author": "Ivan Turgenyev",
       "publisher": "Can yayınevi"
     },
     {
+      "id": 12,
       "bookName": "Ana",
       "author": "Maksim Gorki",
       "publisher": "Türkiye İş Bankası Kültür Yayınları"
     },
     {
+      "id": 13,
       "bookName": "Madame Bovary",
       "author": "Gustave Flaubert",
       "publisher": "Idea yayınevi"
     },
     {
+      "id": 14,
       "bookName": "İki Şehrin Hikayesi",
       "author": "Charles Dickens",
       "publisher": "Can yayınevi"
     },
     {
+      "id": 15,
       "bookName": "Yeraltından Notlar",
       "author": "Fyodor Dostoyevski",
       "publisher": "Türkiye İş Bankası Kültür Yayınları"
     },
     {
+      "id": 16,
       "bookName": "Savaş ve Barış",
       "author": "Lev Tolstoy",
       "publisher": "Idea yayınevi"
     },
     {
+      "id": 17,
       "bookName": "Uğultulu Tepeler",
       "author": "Emily Brontë",
       "publisher": "Can yayınevi"
     },
     {
+      "id": 18,
       "bookName": "Ölü Canlar",
       "author": "Nikolay Vasilyeviç Gogol",
       "publisher": "Türkiye İş Bankası Kültür Yayınları"
     },
     {
+      "id": 19,
       "bookName": "Kırmızı ve Siyah",
       "author": "Stendhal",
       "publisher": "Idea yayınevi"
     },
     {
+      "id": 20,
       "bookName": "Üç Silahşörler",
       "author": "Alexandre Dumas",
       "publisher": "Can yayınevi"
     },
     {
+      "id": 21,
       "bookName": "İnsan Neyle Yaşar",
       "author": "Hasan Ali Yücel",
       "publisher": "Türkiye İş Bankası Kültür Yayınları"
     },
     {
+      "id": 22,
       "bookName": "Yaşlı Adam ve Deniz",
       "author": "Ernest Hemingway",
       "publisher": "Idea yayınevi"
     },
     {
+      "id": 23,
       "bookName": "The Crystal Shard",
       "author": "R.A. Salvatore",
       "publisher": "Can yayınevi"
     },
     {
+      "id": 24,
       "bookName": "Homeland",
       "author": "R.A Salvatore",
       "publisher": "Türkiye İş Bankası Kültür Yayınları"
     },
     {
+      "id": 25,
       "bookName": "Siege of Darkness",
       "author": "R.A Salvatore",
       "publisher": "Idea yayınevi"
     },
     {
+      "id": 26,
       "bookName": "The Halfling's Gem",
       "author": "R.A Salvatore",
       "publisher": "Can yayınevi"
     },
     {
+      "id": 27,
       "bookName": "Sojourn",
       "author": "R.A Salvatore",
       "publisher": "Türkiye İş Bankası Kültür Yayınları"
     },
     {
+      "id": 28,
       "bookName": "Streams of Silver",
       "author": "R.A Salvatore",
       "publisher": "Idea yayınevi"
     },
     {
+      "id": 29,
       "bookName": "The Lone Drow",
       "author": "R.A Salvatore",
       "publisher": "Can yayınevi"
     },
     {
+      "id": 30,
       "bookName": "Exile",
       "author": "R.A Salvatore",
       "publisher": "Türkiye İş Bankası Kültür Yayınları"
     },
     {
+      "id": 31,
       "bookName": "Dune",
       "author": "Frank Herbert",
       "publisher": "Idea yayınevi"
     },
     {
+      "id": 32,
       "bookName": "Nineteen eighty-four",
       "author": "George Orwell",
       "publisher": "Can yayınevi"
     },
     {
+      "id": 33,
       "bookName": "The Kingkiller Chronicle",
       "author": "Patrick Rothfuss",
       "publisher": "Türkiye İş Bankası Kültür Yayınları"
     },
     {
+      "id": 34,
       "bookName": "Serpentine",
       "author": "Cindy Pon",
       "publisher": "Idea yayınevi"
     },
     {
+      "id": 35,
       "bookName": "Wrath of the Dawn",
       "author": "Renee Ardieh",
       "publisher": "Can yayınevi"
     },
     {
+      "id": 36,
       "bookName": "Children of Blood and Bone",
       "author": "Tomi Adeyemi",
       "publisher": "Türkiye İş Bankası Kültür Yayınları"
     },
     {
+      "id": 37,
       "bookName": "Belinde",
       "author": "Maria Edgeworth",
       "publisher": "Idea yayınevi"
     },
     {
+      "id": 38,
       "bookName": "The Prisoner of Zenda",
       "author": "The Interpolation of Dreams",
       "publisher": "Can yayınevi"
     },
     {
+      "id": 39,
       "bookName": "The Italian",
       "author": "Nick Groom",
       "publisher": "Türkiye İş Bankası Kültür Yayınları"

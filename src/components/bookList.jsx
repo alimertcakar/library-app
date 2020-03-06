@@ -6,8 +6,14 @@ function BookList(props) {
   const Books = useContext(BookContext);
   return (
     <BookContext.Provider>
+      //TODO split books array by ten, make pages.
       {Books.books.map(book => (
-        <BookDisplay bookName={book.bookName} />
+        <BookDisplay
+          key={book.id}
+          bookName={book.bookName}
+          bookAuthor={book.author}
+          bookPublisher={book.publisher}
+        />
       ))}
     </BookContext.Provider>
   );
