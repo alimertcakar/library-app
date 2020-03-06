@@ -1,7 +1,6 @@
 import React, { createContext } from 'react';
-import BookDisplay from './BookDisplay';
 
-const BookContext = createContext({ "context state": "no state" });
+const BookContext = createContext("no book yet");
 
 
 export default BookContext;
