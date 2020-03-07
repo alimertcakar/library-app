@@ -5,7 +5,7 @@ import BookContext from "./contexts/bookContext";
 function BookList(props) {
   const Books = useContext(BookContext);
   return (
-    <BookContext.Provider>
+    <BookContext.Provider value={Books}>
       //TODO split books array by ten, make pages.
       {Books.books.map(book => (
         <BookDisplay

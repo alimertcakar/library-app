@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, createContext } from 'react';
 import '../style/components/Pagination.css';
+import BookContext from './contexts/bookContext';
+
 
 function Pagination(props) {
     const [Pages, setPages] = useState(0);
@@ -10,6 +12,7 @@ function Pagination(props) {
             &nbsp; Pages:{Pages} &nbsp;
             <a onClick={() => { alert("x") }}>Next Page</a>
         </ div>
+            
     )
 }
 
