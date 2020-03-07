@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './App.css';
 import './style/reset.css';
 import './style/skeleton.css';
@@ -9,7 +9,11 @@ import Search from './components/search';
 import Pagination from './components/pagination';
 import BookList from './components/bookList';
 
+import BookContext from './components/contexts/bookContext'
+
 function App() {
+  const Book = useContext(BookContext);
+  console.log(Book)
   return (
     <div className="container">
 
@@ -31,7 +35,7 @@ function App() {
         </div>
       </div>
 
-      <div className="row">
+      <div className="row" >
         <div className="four columns offset-by-four">
           <Pagination />
         </div>
