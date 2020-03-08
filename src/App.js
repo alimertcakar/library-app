@@ -7,8 +7,8 @@ import './style/typography.css';
 import Navbar from './components/navbar';
 import Search from './components/search';
 import Pagination from './components/pagination';
+import CreateBook from './components/createBook';
 import BookList from './components/bookList';
-
 import BookContext from './components/contexts/bookContext'
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
       </div>
 
       <div className="row">
-        <div className="four columns offset-by-four">
+        <div className="six columns offset-by-three">
           <Search />
         </div>
       </div>
@@ -32,6 +32,12 @@ function App() {
       <div className="row">
         <div className="twelve columns">
           <BookList page={0} />
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="twelve columns">
+          <CreateBook />
         </div>
       </div>
 

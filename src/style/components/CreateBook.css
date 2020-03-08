@@ -1,0 +1,7 @@
+#createBook {
+  text-align: center;
+  border: solid 2px black;
+  margin: 2rem;
+  padding: 1rem;
+  font-size: large;
+}

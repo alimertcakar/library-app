@@ -8,7 +8,7 @@
 }
 #searchContainer input[type="submit"] {
   flex-grow: 20;
-  color: red;
+  /* color: red; */
   display: inline-block;
   margin: 10px 0 0 !important;
 }
