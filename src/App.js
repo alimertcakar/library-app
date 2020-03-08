@@ -31,7 +31,7 @@ function App() {
 
       <div className="row">
         <div className="twelve columns">
-          <BookList />
+          <BookList page={0} />
         </div>
       </div>
 

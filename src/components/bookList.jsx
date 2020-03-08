@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import BookDisplay from "./bookDisplay";
 import BookContext from "./contexts/bookContext";
 
@@ -6,11 +6,33 @@ import chunk from "../js/chunk";
 
 function BookList(props) {
   const Books = useContext(BookContext);
-  let chunkedBooks = chunk(Books.books, 10);
-  console.log(chunkedBooks);
+  const [currentPage, setCurrentPage] = useState(0);
+  let bookChunks = chunk(Books.books, 10);
 
   return (
-    <React.Fragment>
+    <div id="bookStand">
+      {bookChunks[currentPage].map(book => (
+        <BookDisplay
+          key={book.id}
+          bookName={book.bookName}
+          bookAuthor={book.author}
+          bookPublisher={book.publisher}
+        />
+      ))}
+    </div>
+  );
+}
+
+export default BookList;
+
+//      {// Array(Books.bookCount).fill(<BookDisplay booksJson={Books.books} />)}
+//TODO split books array by ten, make pages.
+
+//without chunking to ten
+/*
+   return (
+  
+  <React.Fragment>
       {Books.books.map(book => (
         <BookDisplay
           key={book.id}
@@ -20,9 +42,31 @@ function BookList(props) {
         />
       ))}
     </React.Fragment>
-  );
-}
-export default BookList;
 
-//      {// Array(Books.bookCount).fill(<BookDisplay booksJson={Books.books} />)}
-//TODO split books array by ten, make pages.
+  );
+  
+
+  {chunk.map(book => (
+    <BookDisplay
+    key={book.id}
+    bookName={book.bookName}
+    bookAuthor={book.author}
+    bookPublisher={book.publisher}
+  />
+))} 
+*/
+
+/*
+    <React.Fragment>
+      {chunkedBooks.forEach(bookChunk => {
+        bookChunk.map(b => (
+          <BookDisplay
+            key={b.id}
+            bookName={b.bookName}
+            bookAuthor={b.author}
+            bookPublisher={b.publisher}
+          />
+        ));
+      })}
+    </React.Fragment>
+*/
