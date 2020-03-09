@@ -5,13 +5,13 @@ import BookContext from "./contexts/bookContext";
 import chunk from "../js/chunk";
 
 function BookList() {
-  const { Books, page, searchResults } = useContext(BookContext);
+  const { Books, page, currentSearch } = useContext(BookContext);
   let bookChunks = chunk(Books.books, 10);
 
-  if (false) {
+  if (currentSearch !== "") {
     return (
       <div id="bookStand">
-        {searchResults[page].map(book => (
+        {currentSearch.map(book => (
           <BookDisplay
             key={book.id}
             bookName={book.bookName}

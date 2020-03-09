@@ -3,7 +3,7 @@ import "../style/components/Search.css";
 import BookContext from "./contexts/bookContext";
 
 export default function Search() {
-  const { Books } = useContext(BookContext);
+  const { Books, setCurrentSearch } = useContext(BookContext);
   let parsed = JSON.parse(JSON.stringify(Books));
 
   function searchBooksAnyParameter(x) {
@@ -19,8 +19,8 @@ export default function Search() {
         <input
           type="text"
           id="Search"
-          onChange={() => {
-            console.log(searchBooksAnyParameter("Victor Hugo"));
+          onChange={e => {
+            setCurrentSearch(searchBooksAnyParameter(e.target.value));
           }}
         ></input>
         <input type="submit" value="SEARCH"></input>

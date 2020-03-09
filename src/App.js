@@ -16,6 +16,7 @@ import Books from './components/contexts/Books.json';
 
 function App() {
   const [page, setPage] = useState(0);
+  const [currentSearch, setCurrentSearch] = useState("");
 
   const [maxPages, setMaxPages] = useState(Books.books.length / 10);   //TODO replace 10 with a variable like "pageItemCount"
   function changePage(x) {
@@ -24,7 +25,7 @@ function App() {
   }
 
   return (
-    <BookProvider value={{ Books, page, changePage }} >
+    <BookProvider value={{ Books, page, changePage, currentSearch, setCurrentSearch }} >
       <div className="container">
 
         <div className="row">
