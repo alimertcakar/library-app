@@ -6,13 +6,12 @@ export default function Search() {
   const { Books } = useContext(BookContext);
   let parsed = JSON.parse(JSON.stringify(Books));
 
-  function searchBooksAny(x) {
+  function searchBooksAnyParameter(x) {
     let searchResult = parsed.books.filter(book => {
       return book.bookName === x || book.author === x || book.publisher === x;
     });
     return searchResult;
   }
-  console.log(searchBooksAny("Victor Hugo")); //Search Function draft
 
   return (
     <BookContext.Provider>
@@ -21,7 +20,7 @@ export default function Search() {
           type="text"
           id="Search"
           onChange={() => {
-            alert("x");
+            console.log(searchBooksAnyParameter("Victor Hugo"));
           }}
         ></input>
         <input type="submit" value="SEARCH"></input>
