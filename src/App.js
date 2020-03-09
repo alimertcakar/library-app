@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import './App.css';
 import './style/reset.css';
 import './style/skeleton.css';
@@ -10,44 +10,55 @@ import Pagination from './components/pagination';
 import CreateBook from './components/createBook';
 import BookList from './components/bookList';
 import BookContext from './components/contexts/bookContext'
+import { BookProvider } from './components/contexts/bookContext';
+
+import Books from './components/contexts/Books.json';
 
 function App() {
-  const Book = useContext(BookContext);
-  console.log(Book)
+  const [page, setPage] = useState(0);
+
+  const [maxPages, setMaxPages] = useState(Books.books.length / 10);   //TODO replace 10 with a variable like "pageItemCount"
+  function changePage(x) {
+    if (x < maxPages && x > -1)
+      setPage(x)
+  }
+
   return (
-    <div className="container">
+    <BookProvider value={{ Books, page, changePage }} >
+      <div className="container">
 
-      <div className="row">
-        <div className="twelve columns">
-          <Navbar title="Library Index" />
+        <div className="row">
+          <div className="twelve columns">
+            <Navbar title="Library Index" />
+          </div>
         </div>
-      </div>
 
-      <div className="row">
-        <div className="six columns offset-by-three">
-          <Search />
+        <div className="row">
+          <div className="six columns offset-by-three">
+            <Search />
+          </div>
         </div>
-      </div>
 
-      <div className="row">
-        <div className="twelve columns">
-          <BookList page={0} />
+        <div className="row">
+          <div className="twelve columns">
+            <BookList page={0} />
+          </div>
         </div>
-      </div>
 
-      <div className="row">
-        <div className="twelve columns">
-          <CreateBook />
+        <div className="row">
+          <div className="twelve columns">
+            <CreateBook />
+          </div>
         </div>
-      </div>
 
-      <div className="row" >
-        <div className="four columns offset-by-four">
-          <Pagination />
-        </div>
-      </div>
+        <div className="row" >
+          <div className="four columns offset-by-four">
+            <Pagination />
+          </div>
+        </div >
 
-    </div>
+      </div >
+    </ BookProvider>
   );
 }
 

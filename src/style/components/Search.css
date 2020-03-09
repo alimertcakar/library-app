@@ -5,6 +5,7 @@
   flex-grow: 80;
   display: inline-block;
   margin: 10px 5px 0;
+  font-weight: bold;
 }
 #searchContainer input[type="submit"] {
   flex-grow: 20;

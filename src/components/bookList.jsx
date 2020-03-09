@@ -5,13 +5,12 @@ import BookContext from "./contexts/bookContext";
 import chunk from "../js/chunk";
 
 function BookList(props) {
-  const Books = useContext(BookContext);
-  const [currentPage, setCurrentPage] = useState(0);
+  const { Books, page } = useContext(BookContext);
   let bookChunks = chunk(Books.books, 10);
 
   return (
     <div id="bookStand">
-      {bookChunks[currentPage].map(book => (
+      {bookChunks[page].map(book => (
         <BookDisplay
           key={book.id}
           bookName={book.bookName}

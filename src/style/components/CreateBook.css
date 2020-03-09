@@ -1,7 +1,11 @@
 #createBook {
   text-align: center;
-  border: solid 2px black;
+  border: solid 2px #bbb;
   margin: 2rem;
-  padding: 1rem;
-  font-size: large;
+  width: 100%;
+}
+#createBook a {
+  text-decoration: none;
+  color: rgb(144, 143, 143);
+  font-weight: 600;
 }
