@@ -5,21 +5,36 @@ import BookContext from "./contexts/bookContext";
 import chunk from "../js/chunk";
 
 function BookList() {
-  const { Books, page } = useContext(BookContext);
+  const { Books, page, searchResults } = useContext(BookContext);
   let bookChunks = chunk(Books.books, 10);
 
-  return (
-    <div id="bookStand">
-      {bookChunks[page].map(book => (
-        <BookDisplay
-          key={book.id}
-          bookName={book.bookName}
-          bookAuthor={book.author}
-          bookPublisher={book.publisher}
-        />
-      ))}
-    </div>
-  );
+  if (false) {
+    return (
+      <div id="bookStand">
+        {searchResults[page].map(book => (
+          <BookDisplay
+            key={book.id}
+            bookName={book.bookName}
+            bookAuthor={book.author}
+            bookPublisher={book.publisher}
+          />
+        ))}
+      </div>
+    );
+  } else {
+    return (
+      <div id="bookStand">
+        {bookChunks[page].map(book => (
+          <BookDisplay
+            key={book.id}
+            bookName={book.bookName}
+            bookAuthor={book.author}
+            bookPublisher={book.publisher}
+          />
+        ))}
+      </div>
+    );
+  }
 }
 
 export default BookList;
