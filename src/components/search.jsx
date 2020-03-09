@@ -6,17 +6,13 @@ export default function Search() {
   const { Books } = useContext(BookContext);
   let parsed = JSON.parse(JSON.stringify(Books));
 
-  function searchBooks(bookName, author, publisher) {
+  function searchBooksAny(x) {
     let searchResult = parsed.books.filter(book => {
-      return (
-        book.bookName === bookName ||
-        book.author === author ||
-        book.publisher === publisher
-      );
+      return book.bookName === x || book.author === x || book.publisher === x;
     });
     return searchResult;
   }
-  console.log(searchBooks("Victor Hugo")); //Search Function draft
+  console.log(searchBooksAny("Victor Hugo")); //Search Function draft
 
   return (
     <BookContext.Provider>
@@ -33,3 +29,17 @@ export default function Search() {
     </BookContext.Provider>
   );
 }
+
+/*
+  function searchBooks(bookName, author, publisher) {
+    let searchResult = parsed.books.filter(book => {
+      return (
+        book.bookName === bookName ||
+        book.author === author ||
+        book.publisher === publisher
+      );
+    });
+    return searchResult;
+  }
+  console.log(searchBooks("Victor Hugo")); //Search Function draft
+  */
