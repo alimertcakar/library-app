@@ -41,7 +41,7 @@ function App() {
 
         <div className="row">
           <div className="twelve columns">
-            <BookList page={0} />
+            <BookList />
           </div>
         </div>
 

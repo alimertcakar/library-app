@@ -4,7 +4,7 @@ import BookContext from "./contexts/bookContext";
 
 import chunk from "../js/chunk";
 
-function BookList(props) {
+function BookList() {
   const { Books, page } = useContext(BookContext);
   let bookChunks = chunk(Books.books, 10);
 
