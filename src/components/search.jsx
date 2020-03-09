@@ -4,7 +4,20 @@ import BookContext from "./contexts/bookContext";
 
 export default function Search() {
   const { Books } = useContext(BookContext);
-  console.log(Books.books);
+  let parsed = JSON.parse(JSON.stringify(Books));
+
+  function searchBooks(bookName, author, publisher) {
+    let searchResult = parsed.books.filter(book => {
+      return (
+        book.bookName === bookName ||
+        book.author === author ||
+        book.publisher === publisher
+      );
+    });
+    return searchResult;
+  }
+  console.log(searchBooks("Victor Hugo")); //Search Function draft
+
   return (
     <BookContext.Provider>
       <div id="searchContainer">
