@@ -14,7 +14,7 @@ function BookInspect(props) {
         setSrc("bookOpen.svg");
       }}
       onClick={() => {
-        window.location.href = ` ${window.location.origin}/${props.id}`;
+        window.location.href = ` ${window.location.origin}/detail/${props.id}`;
       }}
       onMouseLeave={() => setSrc("book.svg")}
     />
