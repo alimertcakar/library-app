@@ -5,7 +5,7 @@ import BookInspect from "./bookInspect";
 function BookDisplay(props) {
   return (
     <div id="BookDisplay">
-      <BookInspect />
+      <BookInspect id={props.id} />
       Book: - {props.bookName} - {props.bookAuthor} - {props.bookPublisher}
     </div>
   );

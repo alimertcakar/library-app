@@ -14,6 +14,7 @@ function BookList() {
         {currentSearch.map(book => (
           <BookDisplay
             key={book.id}
+            id={book.id}
             bookName={book.bookName}
             bookAuthor={book.author}
             bookPublisher={book.publisher}
@@ -27,6 +28,7 @@ function BookList() {
         {bookChunks[page].map(book => (
           <BookDisplay
             key={book.id}
+            id={book.id}
             bookName={book.bookName}
             bookAuthor={book.author}
             bookPublisher={book.publisher}
