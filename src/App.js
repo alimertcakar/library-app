@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react';
 import './App.css';
-import './style/reset.css';
 import './style/skeleton.css';
 import './style/typography.css';
+import GlobalStyle from './style/globalStyle';
 
 import Navbar from './components/navbar';
 import Search from './components/search';
@@ -25,41 +25,44 @@ function App() {
   }
 
   return (
-    <BookProvider value={{ Books, page, changePage, currentSearch, setCurrentSearch }} >
-      <div className="container">
+    <React.Fragment>
+      <GlobalStyle />
+      <BookProvider value={{ Books, page, changePage, currentSearch, setCurrentSearch }} >
+        <div className="container">
 
-        <div className="row">
-          <div className="twelve columns">
-            <Navbar title="Library Index" />
+          <div className="row">
+            <div className="twelve columns">
+              <Navbar title="Library Index" />
+            </div>
           </div>
-        </div>
 
-        <div className="row">
-          <div className="six columns offset-by-three">
-            <Search />
+          <div className="row">
+            <div className="six columns offset-by-three">
+              <Search />
+            </div>
           </div>
-        </div>
 
-        <div className="row">
-          <div className="twelve columns">
-            <BookList />
+          <div className="row">
+            <div className="twelve columns">
+              <BookList />
+            </div>
           </div>
-        </div>
 
-        <div className="row">
-          <div className="twelve columns">
-            <CreateBook />
+          <div className="row">
+            <div className="twelve columns">
+              <CreateBook />
+            </div>
           </div>
-        </div>
 
-        <div className="row" >
-          <div className="four columns offset-by-four">
-            <Pagination />
-          </div>
+          <div className="row" >
+            <div className="four columns offset-by-four">
+              <Pagination />
+            </div>
+          </div >
+
         </div >
-
-      </div >
-    </ BookProvider>
+      </ BookProvider>
+    </React.Fragment>
   );
 }
 
