@@ -8,7 +8,11 @@ export default function Search() {
 
   function searchBooksAnyParameter(x) {
     let searchResult = parsed.books.filter(book => {
-      return book.bookName === x || book.author === x || book.publisher === x;
+      return (
+        book.bookName.toLowerCase() === x ||
+        book.author.toLowerCase() === x ||
+        book.publisher.toLowerCase() === x
+      );
     });
     return searchResult;
   }
