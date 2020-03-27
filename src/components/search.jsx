@@ -9,9 +9,9 @@ export default function Search() {
   function searchBooksAnyParameter(x) {
     let searchResult = parsed.books.filter(book => {
       return (
-        book.bookName.toLowerCase() === x ||
-        book.author.toLowerCase() === x ||
-        book.publisher.toLowerCase() === x
+        book.bookName.toLowerCase().includes(x.toLowerCase()) ||
+        book.author.toLowerCase().includes(x.toLowerCase()) ||
+        book.publisher.toLowerCase().includes(x.toLowerCase())
       );
     });
     return searchResult;
